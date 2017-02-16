@@ -25,7 +25,7 @@ def send_client():
         if message == '/name':
             message.split(' ')
             name = message[1]
-        else
+        else:
             pub.publish(name,message)
     return
 
