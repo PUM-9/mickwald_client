@@ -4,7 +4,7 @@ from chat_server.msg import Message
 
 def select_mode():
     mode = 0
-    while mode != 'read' || mode != 'send':
+    while mode != 'read' or mode != 'send':
         mode = raw_input('Enter mode (read/send):' + mode)
     if mode == 'read':
         read_client()
