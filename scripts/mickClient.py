@@ -4,6 +4,8 @@ import sys
 
 
 def select_mode():
+    read_client()
+    return
     mode = sys.argv[sys.argv.__len__()-1]
     if mode == 'read':
         read_client()
