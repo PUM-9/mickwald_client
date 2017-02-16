@@ -10,25 +10,24 @@ def select_mode():
     if mode == 'read':
         read_client()
     if mode == 'send':
-        send_client()
+        run_client()
     if mode != 'read':
         if mode != 'send':
             print("Usage: use \"read\" or  \"send\" as arguments for respective mode")
     return
 
 
-def send_client():
+def run_client():
     pub = rospy.Publisher('chat_out', Message, queue_size=10)
-    rospy.init_node('mick_sender', anonymous=True)
+    rospy.init_node('mick_client', anonymous=True)
+    rospy.Subscriber('chat_in', Message, callback)
     name = raw_input('Choose name: ')
     message = 0
     shutdown = False
     while not shutdown:
         message = raw_input(name + ': ')
         if message[0:5] == '/name':
-            message = message[0:]
-            message = message.split(' ')
-            name = message[1]
+            name = message[6:]
         elif message[0:5] == '/exit':
             shutdown = not shutdown
         else:
@@ -48,6 +47,6 @@ def read_client():
 
 if __name__ == "__main__":
     try:
-        select_mode()
+        run_client()
     except rospy.ROSInterruptException:
         pass
