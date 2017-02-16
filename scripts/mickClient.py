@@ -6,9 +6,9 @@ def select_mode():
     mode = 0
     while mode != 'read' or mode != 'send':
         mode = raw_input('Enter mode (read/send):')
-    if mode == 'read':
+    if mode == "read":
         read_client()
-    if mode == 'send':
+    if mode == "send":
         send_client()
     return
 
