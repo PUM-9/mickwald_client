@@ -1,6 +1,8 @@
+#!/usr/bin/env python
 import rospy
 from chat_server.msg import Message
 import sys
+
 
 
 def select_mode():
