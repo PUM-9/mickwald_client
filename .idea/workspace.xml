@@ -25,8 +25,8 @@
       <file leaf-file-name="mickClient.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/mickClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="992">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#22#34#0" expanded="true" />
               </folding>
@@ -677,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487255182407</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="mashed send and read mode together&#10;">
+      <created>1487257913934</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1487257913934</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -718,7 +725,8 @@
     <MESSAGE value="working on modes&#10;" />
     <MESSAGE value="fixing exit publishing&#10;" />
     <MESSAGE value="working on read mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on read mode" />
+    <MESSAGE value="mashed send and read mode together&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="mashed send and read mode together&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -755,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/mickClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="992">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#22#34#0" expanded="true" />
           </folding>

@@ -35,7 +35,10 @@ def run_client():
     return
 
 def callback(message):
-    print(message.sender + " says: " + message.message)
+    if message.sender == "":
+        print(\n + "Noname" + " says: " + message.message + "\n" + name)
+    else:
+        print(\n + message.sender + " says: " + message.message + "\n" + name)
 
 def read_client():
     rospy.init_node('mickChatListener', anonymous=True)
