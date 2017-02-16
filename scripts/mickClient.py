@@ -33,7 +33,14 @@ def send_client():
             pub.publish(name,message)
     return
 
+def callback(Message):
+    print(message[0] + " says: " + message[1])
+
 def read_client():
+    rospy.init_node('mickChatListener',Anonymous=True)
+    rospy.Subscriber('chat_in',Message,callback)
+    while not rospy.is_shutdown():
+
     return
 
 if __name__ == "__main__":
