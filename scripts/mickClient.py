@@ -30,11 +30,11 @@ def send_client():
         elif message[0:5] == '/exit':
             shutdown = not shutdown
         else:
-            pub.publish(name,message)
+            pub.publish(name, message)
     return
 
 def callback(message):
-    print(message[0] + " says: " + message[1])
+    print(message.sender + " says: " + message.message)
 
 def read_client():
     rospy.init_node('mickChatListener', anonymous=True)
