@@ -22,7 +22,11 @@ def send_client():
     message = 0
     while message != '/exit':
         message = raw_input('Message: ')
-        #pub.publish(name,message)
+        if message == '/name':
+            message.split(' ')
+            name = message[1]
+        else
+            pub.publish(name,message)
     return
 
 def read_client():
