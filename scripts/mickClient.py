@@ -18,7 +18,7 @@ def select_mode():
 def send_client():
     pub = rospy.Publisher('chat_out', Message, queue_size=10)
     rospy.init_node('mick_sender', anonymous=True)
-    name = 'mickwald'
+    name = raw_input('Choose name: ')
     message = 0
     while message != '/exit':
         message = raw_input(name + ': ')
