@@ -3,7 +3,7 @@ from chat_server.msg import Message
 
 
 def select_mode():
-    global mode = ""
+    mode = ""
     while mode != 'read' or mode != 'send':
         mode = raw_input('Enter mode (read/send):')
     if mode == "read":
