@@ -22,8 +22,7 @@ def send_client():
     message = 0
     while message != '/exit':
         message = raw_input(name + ': ')
-        print(message[0:5])
-        if message[0:4] == '/name':
+        if message[0:5] == '/name':
             message = message[0:]
             message = message.split(' ')
             name = message[1]
