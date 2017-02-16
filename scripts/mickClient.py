@@ -23,8 +23,10 @@ def send_client():
     while message != '/exit':
         message = raw_input(name + ': ')
         if message == '/name':
+            message = message[0:]
             message = message.split(' ')
             name = message[1]
+            print("Name: " + name + " Message: " + message[1])
         else:
             pub.publish(name,message)
     return
