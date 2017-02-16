@@ -4,9 +4,16 @@ import sys
 
 
 def select_mode():
-    print(sys.argv)
     mode = sys.argv[sys.argv.__len__()-1]
+    if mode == 'read':
+        read_client()
+    if mode == 'send':
+        send_client()
+    if mode != 'read':
+        if mode != 'send':
+            print("Usage: use \"read\" or  \"send\" as arguments for respective mode")
     return
+
 
 def send_client():
     pub = rospy.Publisher('chat_out', Message, queue_size=10)
