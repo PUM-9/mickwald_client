@@ -20,7 +20,7 @@ def send_client():
     rospy.init_node('mick_sender', anonymous=True)
     name = raw_input('Choose name: ')
     message = 0
-    shutdown = false
+    shutdown = False
     while not shutdown:
         message = raw_input(name + ': ')
         if message[0:5] == '/name':
