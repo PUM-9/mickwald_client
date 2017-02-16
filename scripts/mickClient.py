@@ -37,7 +37,7 @@ def callback(Message):
     print(message[0] + " says: " + message[1])
 
 def read_client():
-    rospy.init_node('mickChatListener', Anonymous=True)
+    rospy.init_node('mickChatListener', anonymous=True)
     rospy.Subscriber('chat_in', Message, callback)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
