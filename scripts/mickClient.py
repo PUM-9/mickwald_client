@@ -1,15 +1,11 @@
 import rospy
 from chat_server.msg import Message
+import sys
 
 
 def select_mode():
-    mode = ""
-    while mode != 'read' or mode != 'send':
-        mode = raw_input('Enter mode (read/send):')
-    if mode == "read":
-        read_client()
-    if mode == "send":
-        send_client()
+    print(sys.argv)
+    mode = sys.argv[]
     return
 
 def send_client():
