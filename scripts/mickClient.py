@@ -33,7 +33,7 @@ def send_client():
             pub.publish(name,message)
     return
 
-def callback(Message):
+def callback(message):
     print(message[0] + " says: " + message[1])
 
 def read_client():
