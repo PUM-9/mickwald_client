@@ -5,7 +5,7 @@ import sys
 
 def select_mode():
     print(sys.argv)
-    mode = sys.argv[3]
+    mode = sys.argv[2]
     return
 
 def send_client():
