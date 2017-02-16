@@ -20,13 +20,15 @@ def send_client():
     rospy.init_node('mick_sender', anonymous=True)
     name = raw_input('Choose name: ')
     message = 0
-    while message != '/exit':
+    shutdown = false
+    while !shutdown:
         message = raw_input(name + ': ')
         if message[0:5] == '/name':
             message = message[0:]
             message = message.split(' ')
             name = message[1]
-            print("Name: " + name + " Message: " + message[1])
+        elif message[0:5] == '/exit':
+            shutdown = !shutdown
         else:
             pub.publish(name,message)
     return
