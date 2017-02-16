@@ -21,14 +21,14 @@ def send_client():
     name = raw_input('Choose name: ')
     message = 0
     shutdown = false
-    while !shutdown:
+    while not shutdown:
         message = raw_input(name + ': ')
         if message[0:5] == '/name':
             message = message[0:]
             message = message.split(' ')
             name = message[1]
         elif message[0:5] == '/exit':
-            shutdown = !shutdown
+            shutdown = not shutdown
         else:
             pub.publish(name,message)
     return
