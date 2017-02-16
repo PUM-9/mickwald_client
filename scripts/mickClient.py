@@ -23,7 +23,7 @@ def send_client():
     return
 
 def read_client():
-
+    return
 
 if __name__ == "__main__":
     try:
