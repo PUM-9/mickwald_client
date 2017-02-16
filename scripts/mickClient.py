@@ -19,7 +19,7 @@ def send_client():
     message = 0
     while message != '/exit':
         message = raw_input('Message: ')
-        //pub.publish(name,message)
+        #pub.publish(name,message)
     return
 
 def read_client():
